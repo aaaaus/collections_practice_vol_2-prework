@@ -121,7 +121,7 @@ def organize_schools(hash)
     end
     school_location.each do |key, value|
       if value == sort_hash[value]
-        sort_hash[value].push(value)
+        sort_hash[value].push(school)
       end
     end
   end
