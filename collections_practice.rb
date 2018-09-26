@@ -89,6 +89,7 @@ def find_cool(array)
 # argument:  [{:name=>"ashley", :temperature=>"sort of cool"},
 # {:name=>"blake", :temperature=>"cool"}]
 # expected: [{:name=>"blake", :temperature=>"cool"}]
+
   cool_array = []
   array.each do |element|
     element.each do |key, value|
@@ -97,6 +98,9 @@ def find_cool(array)
       end
     end
   end
+end
+
+def organize_schools
 end
 
 
