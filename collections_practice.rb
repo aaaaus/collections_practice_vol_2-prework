@@ -119,7 +119,7 @@ def organize_schools(hash)
      sort_hash[value] = Array.new(0)
      sort_hash.keys.each do |sort_key|
           if value == sort_key
-            sort_key.push(school)
+            sort_hash[sort_key].push(school)
           end
      end
     end
