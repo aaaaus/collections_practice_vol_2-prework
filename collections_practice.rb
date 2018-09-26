@@ -65,9 +65,9 @@ end
 
 def merge_data(keys, data)
   
-keys = [{:first_name=>"blake"}, {:first_name=>"ashley"}]
-data = [{"blake"=>{:awesomeness=>10, :height=>"74", :last_name=>"johnson"},
-"ashley"=>{:awesomeness=>9, :height=>60, :last_name=>"dubs"}}]
+# keys = [{:first_name=>"blake"}, {:first_name=>"ashley"}]
+# data = [{"blake"=>{:awesomeness=>10, :height=>"74", :last_name=>"johnson"},
+# "ashley"=>{:awesomeness=>9, :height=>60, :last_name=>"dubs"}}]
 
 #expected answer: [{:awesomeness=>10, :first_name=>"blake", :height=>"74", :last_name=>"johnson"}, {:awesomeness=>9, :first_name=>"ashley", :height=>60, :last_name=>"dubs"}]
 
@@ -76,20 +76,13 @@ data = [{"blake"=>{:awesomeness=>10, :height=>"74", :last_name=>"johnson"},
   array = []
   keys.each do |key|
     data.first.each do |k, v|
-      if key.values
-    
+      if key.values[0] == k
+        array.push(key + v)
+      end
+    end
+  end
+  return array
 end
-
-return array
-end
-
-merged = []
-  keys.each do |i| 
-    data.first.map do |k,v| 
-      if i.values[0] == k 
-        merged << i.merge(v) 
-        end end end
-  merged
 
 
 
