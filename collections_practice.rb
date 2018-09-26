@@ -113,11 +113,11 @@ def organize_schools(hash)
 
 # expected: {"Chicago"=>["dev boot camp chicago"], "NYC"=>["flatiron school bk", "flatiron school", "general assembly"], "SF"=>["dev boot camp", "Hack Reactor"]}
  
-# binding.pry
   sort_hash = {}
   hash.each do |school, school_location|
     school_location.each do |key, value|
      sort_hash[value] = Array.new(0)
+     binding.pry
      if value == sort_hash[value]
         sort_hash[value].push(school)
       end
