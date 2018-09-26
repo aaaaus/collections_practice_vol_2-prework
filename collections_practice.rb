@@ -69,14 +69,16 @@ def merge_data(keys, data)
 # data = [{"blake"=>{:awesomeness=>10, :height=>"74", :last_name=>"johnson"},
 #  "ashley"=>{:awesomeness=>9, :height=>60, :last_name=>"dubs"}}]
 
+#expected answer: [{:awesomeness=>10, :first_name=>"blake", :height=>"74", :last_name=>"johnson"}, {:awesomeness=>9, :first_name=>"ashley", :height=>60, :last_name=>"dubs"}]
+
 #  binding.pry
   
   array = []
-#   data.each do |key|
-#   key[:first_name] = key
-# end
-# array.push(data)
-# return array
+  data.each do |key|
+  key[:first_name] = key
+end
+array.push(data)
+return array
 end
 
 
