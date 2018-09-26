@@ -64,7 +64,8 @@ end
 end
 
 def merge_data(keys, data)
-keys = 
+# keys = [{:first_name=>"blake"}, {:first_name=>"ashley"}]
+# data = 
   binding.pry
   array = []
   data.each do |key|
