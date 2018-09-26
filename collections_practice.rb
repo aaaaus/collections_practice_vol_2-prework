@@ -117,10 +117,9 @@ def organize_schools(hash)
   hash.each do |school, school_location|
     school_location.each do |key, value|
      sort_hash[value] = Array.new(0)
-     binding.pry
      if value == sort_hash[value]
         sort_hash[value].push(school)
-      end
+     end
     end
   end
   return sort_hash
