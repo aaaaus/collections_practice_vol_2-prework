@@ -77,7 +77,7 @@ def merge_data(keys, data)
   keys.each do |key|
     data.first.each do |k, v|
       if key.values[0] == k
-        array.push(key).merge(v)
+        array.push(key.merge(v))
       end
     end
   end
