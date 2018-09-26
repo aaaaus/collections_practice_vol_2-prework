@@ -84,8 +84,12 @@ def merge_data(keys, data)
   return array
 end
 
-def find_cool(argument)
-  binding.pry
+def find_cool(array)
+  
+# argument:  [{:name=>"ashley", :temperature=>"sort of cool"},
+# {:name=>"blake", :temperature=>"cool"}]
+  
+  
 end
 
 
