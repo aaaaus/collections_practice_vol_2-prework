@@ -120,7 +120,7 @@ def organize_schools(hash)
      sort_hash[value] = school
    end
  end
-
+  return sort_hash
 end
 
 
