@@ -118,13 +118,13 @@ def organize_schools(hash)
     school_location.collect do |key, value|
      sort_hash[value] = Array.new(0)
     end
-    school_location.collect do |key, value|
-    sort_hash.keys.collect do |sort_key|
-          if value == sort_key
-            sort_hash[sort_key].push(school)
-          end
-    end
-    end
+    # school_location.collect do |key, value|
+    # sort_hash.keys.collect do |sort_key|
+    #       if value == sort_key
+    #         sort_hash[sort_key].push(school)
+    #       end
+    # end
+    # end
   end
   return sort_hash
 end
