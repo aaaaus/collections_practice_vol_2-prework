@@ -75,11 +75,20 @@ def merge_data(keys, data)
   
   array = []
   keys.each do |key|
-  keys[:first_name] = keys
+    data.each do |k, v|
+    
 end
 
 return array
 end
+
+merged = []
+  keys.each do |i| 
+    data.first.map do |k,v| 
+      if i.values[0] == k 
+        merged << i.merge(v) 
+        end end end
+  merged
 
 
 
