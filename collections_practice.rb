@@ -114,15 +114,15 @@ def organize_schools(hash)
 # expected: {"Chicago"=>["dev boot camp chicago"], "NYC"=>["flatiron school bk", "flatiron school", "general assembly"], "SF"=>["dev boot camp", "Hack Reactor"]}
  
   sort_hash = {}
-  hash.collect do |school, school_location|
-    school_location.collect do |key, value|
+  hash.each do |school, school_location|
+    school_location.each do |key, value|
      sort_hash[value] = Array.new(0)
     end
   end
   
-  hash.collect do |school, school_location|
-    school_location.collect do |key, value|
-      sort_hash.keys.collect do |sort_key|
+  hash.each do |school, school_location|
+    school_location.each do |key, value|
+      sort_hash.keys.each do |sort_key|
           if value == sort_key
             sort_hash[sort_key].push(school)
           end
