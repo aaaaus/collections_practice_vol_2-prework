@@ -101,6 +101,14 @@ def find_cool(array)
 end
 
 def organize_schools(argument)
+  
+# # argument: {"flatiron school bk"=>{:location=>"NYC"},
+# "flatiron school"=>{:location=>"NYC"},
+# "dev boot camp"=>{:location=>"SF"},
+# "dev boot camp chicago"=>{:location=>"Chicago"},
+# "general assembly"=>{:location=>"NYC"},
+# "Hack Reactor"=>{:location=>"SF"}}
+ 
   binding.pry
 end
 
