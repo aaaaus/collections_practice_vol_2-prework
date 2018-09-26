@@ -100,7 +100,8 @@ def find_cool(array)
   end
 end
 
-def organize_schools
+def organize_schools(argument)
+  binding.pry
 end
 
 
