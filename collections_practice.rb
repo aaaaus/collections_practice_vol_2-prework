@@ -124,6 +124,7 @@ def organize_schools(hash)
             sort_hash[sort_key].push(school)
           end
     end
+    end
   end
   return sort_hash
 end
