@@ -104,7 +104,7 @@ def organize_schools(hash)
  
 #argument: 
   
-# argument: {"flatiron school bk"=>{:location=>"NYC"},
+# {"flatiron school bk"=>{:location=>"NYC"},
 # "flatiron school"=>{:location=>"NYC"},
 # "dev boot camp"=>{:location=>"SF"},
 # "dev boot camp chicago"=>{:location=>"Chicago"},
