@@ -75,7 +75,8 @@ data = [{"blake"=>{:awesomeness=>10, :height=>"74", :last_name=>"johnson"},
   
   array = []
   keys.each do |key|
-    data.each do |k, v|
+    data.first.each do |k, v|
+      if key.values
     
 end
 
