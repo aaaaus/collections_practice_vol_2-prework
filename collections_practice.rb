@@ -74,10 +74,10 @@ def merge_data(keys, data)
 #  binding.pry
   
   array = []
-  data.each do |key|
-  key[:first_name] = key
+  keys.each do |key|
+  keys[:first_name] = keys
 end
-array.push(data)
+
 return array
 end
 
