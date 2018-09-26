@@ -64,6 +64,7 @@ end
 end
 
 def merge_data(keys, data)
+keys = 
   binding.pry
   array = []
   data.each do |key|
